@@ -6,6 +6,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+        <h1>Cripto César</h1>
+    </header>
+    <main>
+          <h3>Ingresa tu palabra o frase aquí:</h3>
+      <input type="text" id="texto_usuario"/>
+          <h3>Número de desplazamiento</h3>
+      <input type="number" min="0" max="99" required="required" id="numero_clave" /> <!--Required porque es obligatorio-->
+      <br>
+      <input type="button" value="CIFRAR" id="boton_cifrado"/> 
+      <input type="button" value="DECIFRADO" id="boton_descifrado"/>
+          <h3>Tu resultado</h3>
+      <input type="text" id="resultado"/>
+    </main>
     <div id="root"></div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
