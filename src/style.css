@@ -5,22 +5,26 @@ h1 {
     background-color: #F5BE2D;
     color: black;
     font-family: 'Indie Flower', cursive;
-    font-size: 50px;
+    font-size: 90px;
     text-align: center;
-    height: 80px;
+    height: 100px;
+    margin: 0;
     }
 
 body {
+    margin:0;
     background-image: url("https://imagizer.imageshack.com/v2/4098x2304q90/r/922/QHWiI3.jpg"); 
     background-repeat:no repeat; 
     background-size: 100%;
-   
+    
 }
 
 h3 {
     color: white;
     font-family: 'Indie Flower', cursive;
+    font-size: 34px;
     text-align: center;
+    margin-bottom: 20px;
    
 }
 
@@ -30,12 +34,20 @@ main{
 
 #texto_usuario{
     height: 100px;
-    width: 250px;
+    width: 450px;
+   
 }
 
 #resultado{
     height: 100px;
-    width: 250px;
+    width: 450px
+}
+
+#numero_clave{
+    margin-bottom: 20px;
+    height: 50px;
+    width: 100px
+
 }
 
 #boton_cifrado{
