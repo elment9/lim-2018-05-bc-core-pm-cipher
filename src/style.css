@@ -1,10 +1,47 @@
-body {
-    background-color: black;
-}
-header {
-    background-color: yellow;
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+
+h1 {
+    background-color: #F5BE2D;
+    color: black;
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+    text-align: center;
+    height: 80px;
     }
+
+body {
+    background-image: url("https://imagizer.imageshack.com/v2/4098x2304q90/r/922/QHWiI3.jpg"); 
+    background-repeat:no repeat; 
+    background-size: 100%;
+   
+}
+
 h3 {
     color: white;
-    
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+   
+}
+
+main{
+    text-align: center;
+}
+
+#texto_usuario{
+    height: 100px;
+    width: 250px;
+}
+
+#resultado{
+    height: 100px;
+    width: 250px;
+}
+
+#boton_cifrado{
+    border: 2px
+}
+
+#boton_descifrado{
+    border: 2px
 }
