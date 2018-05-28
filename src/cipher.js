@@ -3,7 +3,7 @@ window.cipher = {
     //Declaro palabra de usuario y extraigo la longitud de la palabra. 
     let textLength = string.length;
     let finalText = ''; 
-    for(i=0; i<textLength; i++){ //4.Inicio mi ciclo for
+    for(i=0; i< textLength; i++){ //4.Inicio mi ciclo for
       let firstAscii = string.charCodeAt(i);
         if(firstAscii >= 65 && firstAscii <= 90){//9. Creamos condicional para Mayusculas
         let newAsccii = (firstAscii - 65 + offset) % 26 + 65; //8. Aplicamos la fórmula y tenemos el nuevo código ASCII
@@ -21,7 +21,7 @@ window.cipher = {
         finalText += numbers;
       }
         else if(firstAscii >= 33 && firstAscii <= 47){//15. Signos
-        let newAsccii = (firstAscii - 33 + offSet) % 15 + 33;//Residuo de 15 porque son 15 signos
+        let newAsccii = (firstAscii - 33 + offset) % 15 + 33;//Residuo de 15 porque son 15 signos
         let sign = String.fromCharCode(newAsccii);
         finalText += sign;
       }      
@@ -33,7 +33,7 @@ window.cipher = {
       else 
         finalText += finalText.toUpperCase(i);
     }
-    answer.value = finalText;
+    answer = finalText;
   },
   decode:function(offset,string){
     let textLength = text.length;
@@ -42,7 +42,6 @@ window.cipher = {
       let firstAscii = text.charCodeAt(i);
       if(firstAscii >= 65 && firstAscii <= 90){
         let newAsccii = (firstAscii - 65 - offset) % 26 + 65;
-        console.log(newAsccii);
         let mayusText = String.fromCharCode(newAsccii); //String es lista global de caracteres, es parte del objeto global
         finalText += mayusText; 
       }
