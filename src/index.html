@@ -3,21 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
       <h1>Encríptalo</h1>
-      <main>
-          <h3>Ingresa tu palabra o frase aquí:</h3>
-      <input type="text" id="texto_usuario"/>
-          <h3>Número de desplazamiento</h3>
-      <input type="number" min="0" max="99" required="required" id="numero_clave" /> <!--Required porque es obligatorio-->
-      <br>
-      <input type="button" value="CIFRAR" id="boton_cifrado"/> 
-      <input type="button" value="DECIFRADO" id="boton_descifrado"/>
-          <h3>Tu resultado</h3>
-      <input type="text" id="resultado"/>
-    </main>
+        <main>
+        <h3>Ingresa tu palabra o frase aquí:</h3>
+<!-- Caja de texto Usuario-->
+         <input type="text" id="user_text"/>
+<!-- Caja número de desplazamientos-->     
+        <h3>Escribe tu número clave</h3>
+         <input type="number" min="1" max="1000" required="required" id="offset"/> 
+            <br>
+<!-- Caja botón descifrado-->    
+         <input type="button" value="DECIFRADO" id="decode_button"/>
+<!-- Caja botón cifrado-->    
+         <input type="button" value="CIFRAR" id="encode_button"/> 
+<!-- Caja resultado-->      
+        <h3>Tu resultado</h3>
+         <input type="text" id="answer_f"/>
+        </main>
     <div id="root"></div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
