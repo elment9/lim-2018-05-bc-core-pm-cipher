@@ -9,6 +9,10 @@ const buttonDecode = document.getElementById("decode_button");
 //Llamo caja respuesta
 let answer = document.getElementById("answer_f");
 //Llamo evento decode
-buttonEncode.addEventListener("click",()=>{
-answer = buttonEncode.addEventListener("click", window.cipher.encode);
+buttonEncode.addEventListener("click",() => {
+answer.value = window.cipher.encode(parseInt(offset.value),string.value);
+})
+//Llamo evento code
+buttonDecode.addEventListener("click",() => {
+answer.value = window.cipher.decode(parseInt(offset.value),string.value);
 })
