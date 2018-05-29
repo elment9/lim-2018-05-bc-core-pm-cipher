@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
-
 h1 {
     background-color: #F5BE2D;
     color: black;
@@ -37,9 +36,12 @@ main{
    
 }
 
-#answer_f{
-    height: 100px;
-    width: 450px
+p{
+    color:#F5BE2D;
+    font-size: 40px;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    align-content: center;
 }
 
 #offset{
@@ -56,13 +58,24 @@ main{
     font-size: 30px;   
     text-align: center;
     height: 40px;
-    width: 120px;
+    width: 180px;
     border: none;
     border-radius: 12px 12px 12px 12px;    
 }
 
 #decode_button{
     background-color: #F5BE2D;    
+    font-family: 'Indie Flower', cursive;
+    color: black;
+    font-size: 30px;   
+    text-align: center;
+    height: 40px;
+    width: 180px;
+    border: none;
+    border-radius: 12px 12px 12px 12px;
+}
+#erase_button{
+    background-color: #23749B;    
     font-family: 'Indie Flower', cursive;
     color: black;
     font-size: 30px;   

@@ -10,18 +10,22 @@
         <main>
         <h3>Ingresa tu palabra o frase aquí:</h3>
 <!-- Caja de texto Usuario-->
-         <input type="text" id="user_text"/>
+<textarea placeholder="No te olvides de tu texto" id="user_text"></textarea>
+         <!--<input type="text" id="user_text"/> ya no coloco imput-->
 <!-- Caja número de desplazamientos-->     
         <h3>Escribe tu número clave</h3>
-         <input type="number" min="1" max="1000" required="required" id="offset"/> 
+         <input type="number" placeholder="Número" id="offset"/> 
             <br>
-<!-- Caja botón descifrado-->    
-         <input type="button" value="DECIFRADO" id="decode_button"/>
-<!-- Caja botón cifrado-->    
+<!-- Botón descifrado-->    
+         <input type="button" value="DECIFRAR" id="decode_button"/>
+<!-- Botón cifrado-->    
          <input type="button" value="CIFRAR" id="encode_button"/> 
+<!--Botón borrado-->
+         <input type="button" value="LIMPIAR" id="erase_button"/> 
 <!-- Caja resultado-->      
-        <h3>Tu resultado</h3>
-         <input type="text" id="answer_f"/>
+         <h3>Tu resultado</h3>
+         <p id="answer_f"></p>
+        <!--<input type="text" id="answer_f"/>-->
         </main>
     <div id="root"></div>
     <script src="cipher.js"></script>
