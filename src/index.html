@@ -11,24 +11,24 @@
 <!-- Caja de texto Usuario-->
 <textarea placeholder="No te olvides de tu texto" id="user_text"></textarea>
          <!--<input type="text" id="user_text"/> ya no coloco imput-->
+         <div>
 <!-- Caja número de desplazamientos-->     
         <h3>Escribe tu número clave</h3>
          <input type="number" min="1" placeholder="Número" id="offset"/> 
         <br>
 <!-- Botón descifrado-->  
-         <BUTton id="decode_button" class="boton">DECIFRA<br>TU MENSAJE</BUTton>  
+         <button id="decode_button" class="boton">DESCIFRA<br>TU MENSAJE</button>  
         <!-- <input type="button" value="DECIFRAR" id="decode_button" class="boton"/>--> 
 <!-- Botón cifrado-->    
-         <BUTton id="encode_button" class="boton">ESCONDE<br>TU MENSAJE</BUTton>  
+         <button id="encode_button" class="boton">CIFRA<br>TU MENSAJE</button>
          <!--<input type="button" value="ESCONDE TU MENSAJE" id="encode_button" class="boton"/>--> 
 <!--Botón borrado-->
-         <BUTton class="boton"id="erase_button" >LIMPIA<br></BUTton>  
-         <!-- <input type="button" value="LIMPIAR" id="erase_button"/> --> 
+         <button class="boton" id="erase_button">LIMPIA</button>  
 <!-- Caja resultado-->      
          <h3>Tu resultado</h3>
          <p id="answer_f"></p>
         <!--<input type="text" id="answer_f"/>-->
-      
+      </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

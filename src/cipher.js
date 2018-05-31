@@ -56,4 +56,5 @@ window.cipher = {
     }
     return finalText;
   }
+  
 }
