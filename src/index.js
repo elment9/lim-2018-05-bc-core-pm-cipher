@@ -20,7 +20,8 @@ buttonDecode.addEventListener("click",() => {
 })
 //Llamo evento Limpiar
 buttonErase.addEventListener("click",() => {
-    answer.innerHTML = " ";
-    
+        answer.innerHTML = " ";
+        string.value = " ";
+        offset.value = " ";
 })
 

@@ -7,7 +7,6 @@
   </head>
   <body>
       <h1>Encríptalo</h1>
-        <main>
         <h3>Ingresa tu palabra o frase aquí:</h3>
 <!-- Caja de texto Usuario-->
 <textarea placeholder="No te olvides de tu texto" id="user_text"></textarea>
@@ -16,17 +15,20 @@
         <h3>Escribe tu número clave</h3>
          <input type="number" min="1" placeholder="Número" id="offset"/> 
         <br>
-<!-- Botón descifrado-->    
-         <input type="button" value="DECIFRAR" id="decode_button"/>
+<!-- Botón descifrado-->  
+         <BUTton id="decode_button" class="boton">DECIFRA<br>TU MENSAJE</BUTton>  
+        <!-- <input type="button" value="DECIFRAR" id="decode_button" class="boton"/>--> 
 <!-- Botón cifrado-->    
-         <input type="button" value="CIFRAR" id="encode_button"/> 
+         <BUTton id="encode_button" class="boton">ESCONDE<br>TU MENSAJE</BUTton>  
+         <!--<input type="button" value="ESCONDE TU MENSAJE" id="encode_button" class="boton"/>--> 
 <!--Botón borrado-->
-         <input type="button" value="LIMPIAR" id="erase_button"/> 
+         <BUTton class="boton"id="erase_button" >LIMPIA<br></BUTton>  
+         <!-- <input type="button" value="LIMPIAR" id="erase_button"/> --> 
 <!-- Caja resultado-->      
          <h3>Tu resultado</h3>
          <p id="answer_f"></p>
         <!--<input type="text" id="answer_f"/>-->
-        </main>
+      
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
