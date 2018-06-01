@@ -7,16 +7,18 @@
   </head>
   <body>
       <h1>Encríptalo</h1>
-      <p>kklklklksfdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssl</p>
-        <h3>Ingresa tu palabra o frase aquí:</h3>
+      <div id="description">
+        <p>Conviértete en un todo espía y envía mensajes secretos a tus amigxs o novix, que solo ellos y tú podrán leer. <b>Encríptalo</b> se basa en el ya conocido <b>Código César</b>, que te permite cifrar y decifrar mensajes con solo ingresar tu texto y un número clave.</p>
+      </div>
+      <h3>Ingresa tu palabra o frase aquí:</h3>
 <!-- Caja de texto Usuario-->
-<textarea id="user_text"></textarea>
+        <textarea id="user_text"></textarea>
          <!--<input type="text" id="user_text"/> ya no coloco imput-->
-         <div>
+      <div id="main">
 <!-- Caja número de desplazamientos-->     
         <h3>Escribe tu número clave</h3>
          <input type="number" min="1" placeholder="Número" id="offset"/> 
-        <br>
+         <br>
 <!-- Botón descifrado-->  
          <button id="decode_button" class="boton">DESCIFRA TU <br> MENSAJE</button>  
         <!-- <input type="button" value="DECIFRAR" id="decode_button" class="boton"/>--> 
@@ -28,11 +30,10 @@
 <!-- Caja resultado-->      
          <h3>Tu resultado</h3>
          <textarea id="answer_f" disabled></textarea>
-         <!--<input type="text" id="answer_f"/>-->
       </div>
       <footer>
-        <p>Creado por Elizabeth Mendoza</p>
-        <p>Portafolio <a href="https://www.behance.net/elizabethmendozat" target="_blank">Elizabeth Mendoza in Behance</a></p>
+        <p class="footer"></p>Creado por Elizabeth Mendoza</p>
+        <p class="footer">Portafolio <a href="https://www.behance.net/elizabethmendozat" target="_blank">www.behance.net/elizabethmendozat</a></p>
       </footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
