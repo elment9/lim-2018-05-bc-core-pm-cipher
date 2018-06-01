@@ -40,11 +40,11 @@ window.cipher = {
           finalText += String.fromCharCode(newAsccii);
       }
       else if (firstAscii >= 48 && firstAscii <= 57){//Números
-          let newAsccii = (firstAscii - 48 - offset) % 10 + 48;
+          let newAsccii = (firstAscii - 57 - offset) % 10 + 57;
           finalText += String.fromCharCode(newAsccii);
       }
       else if(firstAscii >= 33 && firstAscii <= 47){//Signos
-          let newAsccii = (firstAscii - 33 - offset) % 15 + 33;
+          let newAsccii = (firstAscii - 47 - offset) % 15 + 47;
           finalText += String.fromCharCode(newAsccii);
       }
       else if(firstAscii == 32){ //Espacio

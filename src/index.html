@@ -7,9 +7,10 @@
   </head>
   <body>
       <h1>Encríptalo</h1>
+      <p>kklklklksfdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssl</p>
         <h3>Ingresa tu palabra o frase aquí:</h3>
 <!-- Caja de texto Usuario-->
-<textarea placeholder="No te olvides de tu texto" id="user_text"></textarea>
+<textarea id="user_text"></textarea>
          <!--<input type="text" id="user_text"/> ya no coloco imput-->
          <div>
 <!-- Caja número de desplazamientos-->     
@@ -17,18 +18,22 @@
          <input type="number" min="1" placeholder="Número" id="offset"/> 
         <br>
 <!-- Botón descifrado-->  
-         <button id="decode_button" class="boton">DESCIFRA<br>TU MENSAJE</button>  
+         <button id="decode_button" class="boton">DESCIFRA TU <br> MENSAJE</button>  
         <!-- <input type="button" value="DECIFRAR" id="decode_button" class="boton"/>--> 
 <!-- Botón cifrado-->    
-         <button id="encode_button" class="boton">CIFRA<br>TU MENSAJE</button>
+         <button id="encode_button" class="boton">CIFRA TU <br>MENSAJE</button>
          <!--<input type="button" value="ESCONDE TU MENSAJE" id="encode_button" class="boton"/>--> 
 <!--Botón borrado-->
          <button class="boton" id="erase_button">LIMPIA</button>  
 <!-- Caja resultado-->      
          <h3>Tu resultado</h3>
-         <p id="answer_f"></p>
-        <!--<input type="text" id="answer_f"/>-->
+         <textarea id="answer_f" disabled></textarea>
+         <!--<input type="text" id="answer_f"/>-->
       </div>
+      <footer>
+        <p>Creado por Elizabeth Mendoza</p>
+        <p>Portafolio <a href="https://www.behance.net/elizabethmendozat" target="_blank">Elizabeth Mendoza in Behance</a></p>
+      </footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
