@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
 @import url('https://fonts.googleapis.com/css?family=Jua');
 
-#main{
+html{
     min-height: 100%;
     position: relative;
 }
@@ -20,6 +20,7 @@ h1 {
     font-size: 65px;
     height: 100px;
     margin-bottom: 0px;
+    margin-top: 0px
 }
 #description {
     max-width: 900px;
@@ -33,12 +34,11 @@ h1 {
     font-family: 'Inconsolata bold', monospace;
     margin-bottom: 0px;
 }
-
 h3{
     color: white;
     font-family: 'Indie Flower', cursive;
     font-size: 30px;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 #user_text{
@@ -78,7 +78,7 @@ h3{
     font-size: 20px;   
     height: 70px;
     width: 180px;
-    border: 2px solid white;
+    border: 0px solid white;
     border-radius: 12px 12px 12px 12px;  
     cursor: pointer;
     transition: background 1s, color 1s;
@@ -89,11 +89,9 @@ h3{
     background: white;
     color: #fff;
 }
-
 #erase_button{
     background-color: #23749B;
     vertical-align: top;
-
 }
 footer{
     background-color: #F5BE2D;  
@@ -107,6 +105,5 @@ footer{
     overflow: hidden;
     font-family: 'Inconsolata bold', monospace;
     position: absolute;
-    
 }  
 
