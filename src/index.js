@@ -12,10 +12,12 @@ const buttonErase = document.getElementById("erase_button");
 let answer = document.getElementById("answer_f");
 //Llamo evento Encode
 buttonEncode.addEventListener("click",() => {
-        answer.innerHTML = cipher.createCipherWithOffset(parseInt(offset.value)).decode(string.value);
+        //answer.innerHTML = cipher.encode(parseInt(offset.value),string.value);
+        answer.innerHTML = cipher.createCipherWithOffset(parseInt(offset.value)).encode(string.value);
 })
 //Llamo evento Decode
 buttonDecode.addEventListener("click",() => {
+        //answer.innerHTML = cipher.decode(parseInt(offset.value),string.value);
         answer.innerHTML = cipher.createCipherWithOffset(parseInt(offset.value)).decode(string.value);
 })
 //Llamo evento Limpiar

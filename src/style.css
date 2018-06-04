@@ -1,24 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
-@import url('https://fonts.googleapis.com/css?family=Jua');
 
-html{
-    min-height: 100%;
-    position: relative;
-}
 body {
     margin:0;
     background-image: url("https://imagizer.imageshack.com/v2/4098x2304q90/r/922/QHWiI3.jpg"); 
-    background-size: 100%;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
     text-align: center;
 }
 h1 {
-    background-color: #F5BE2D;
+    background-color: #FFCC00;
     color: black;
     font-family: 'Indie Flower', cursive;
-    font-size: 65px;
-    height: 100px;
+    font-size: 85px;
+    height: 120px;
     margin-bottom: 0px;
     margin-top: 0px
 }
@@ -30,71 +26,71 @@ h1 {
     color: #fff;
     font-size: 25px; 
     display: block;
-    text-align: justify;
     font-family: 'Inconsolata bold', monospace;
     margin-bottom: 0px;
+}
+span{
+    background: #FFCC00;
+    color: black;
+    padding: 3px 15px 3px 15px;
+    border-radius: 2px;
 }
 h3{
     color: white;
     font-family: 'Indie Flower', cursive;
-    font-size: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-#user_text{
+textarea{
     height: 100px;
     width: 450px;
     font-size: 20px;
     font-family: 'Inconsolata', monospace;
     resize: none;
-    border-radius: 12px 12px 12px 12px; 
-    background: rgb(255, 232, 173);
-}
-#answer_f{
-    color:rgb(0, 0, 0);
-    font-size: 20px;
-    font-family: 'Inconsolata', monospace;
     text-align: justify;
-    align-content: center;
-    resize: none;
-    height: 100px;
-    width: 450px;
-    border-radius: 12px 12px 12px 12px;  
+    border-radius: 12px 12px 12px 12px; 
+    background: #FFFF99;
     margin-bottom: 40px;
-}
+    outline: none;
+} 
 #offset{
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     height: 50px;
     font-size: 20px;
     width: 100px;
     font-family: 'Inconsolata', monospace;
     border-radius: 5px 5px 5px 5px;  
     border: none;
+    outline: none;
 }
 .boton {
-    background-color: #F5BE2D;    
+    background-color: #FFCC00;    
     font-family: 'Inconsolata bold', monospace;
     color: black;
-    font-size: 20px;   
+    font-size: 22px;   
     height: 70px;
     width: 180px;
     border: 0px solid white;
     border-radius: 12px 12px 12px 12px;  
     cursor: pointer;
-    transition: background 1s, color 1s;
+    transition: background 2s, color 1s;
     line-height: 18px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     margin: 4px;
+    outline: none;
 }
 .boton:hover {
     background: white;
     color: #fff;
 }
 #erase_button{
-    background-color: #23749B;
+    background-color: #9153C1;
     vertical-align: top;
 }
 footer{
-    background-color: #F5BE2D;  
+    background-color: #FFCC00;  
     color: black;
     font-size: 25px;   
     width: 100%;
@@ -106,4 +102,10 @@ footer{
     font-family: 'Inconsolata bold', monospace;
     position: absolute;
 }  
-
+a{
+    color:black;
+}
+a:hover{
+    color:black;
+    font-size: 28px;   
+}

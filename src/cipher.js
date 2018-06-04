@@ -1,11 +1,11 @@
 window.cipher = {
-    encode:(offset,string) => {
+    encode:(offset,string) => {//Función encode
         let finalText = ''; 
-        for(let i=0; i<string.length; i++){
-            let firstAscii = string.charCodeAt(i);
-            if(firstAscii >= 65 && firstAscii <= 90){//Mayúsculas
+        for(let i=0; i<string.length; i++){//Defino el ciclo 
+            let firstAscii = string.charCodeAt(i);//Extraigo el código ascii entrante
+            if(firstAscii >= 65 && firstAscii <= 90){//Mayúsculas- Nuevo Ascii
                 let newAsccii = (firstAscii - 65 + offset) % 26 + 65;
-                finalText += String.fromCharCode(newAsccii);
+                finalText += String.fromCharCode(newAsccii);//Convertur a letras 
             }
             else if (firstAscii >= 97 && firstAscii <= 122){//Minúsculas
                 let newAsccii = (firstAscii - 97 + offset) % 26 + 97;
@@ -23,7 +23,7 @@ window.cipher = {
                 finalText += " ";
             }
             else {
-                finalText += String.fromCharCode(firstAscii);
+                finalText += String.fromCharCode(firstAscii);//Condición para no convertir otros signos
             }          
         }    
         return finalText;
