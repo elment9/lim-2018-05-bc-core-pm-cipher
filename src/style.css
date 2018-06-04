@@ -1,74 +1,111 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
-
-
-h1 {
-    background-color: #F5BE2D;
-    color: black;
-    font-family: 'Indie Flower', cursive;
-    font-size: 90px;
-    text-align: center;
-    height: 130px;
-    margin: 0;
-    }
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
 
 body {
     margin:0;
     background-image: url("https://imagizer.imageshack.com/v2/4098x2304q90/r/922/QHWiI3.jpg"); 
-    background-size: 100%;
-    
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    text-align: center;
 }
-
-h3 {
+h1 {
+    background-color: #FFCC00;
+    color: black;
+    font-family: 'Indie Flower', cursive;
+    font-size: 85px;
+    height: 120px;
+    margin-bottom: 0px;
+    margin-top: 0px
+}
+#description {
+    max-width: 900px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 25px; 
+    display: block;
+    font-family: 'Inconsolata bold', monospace;
+    margin-bottom: 0px;
+}
+span{
+    background: #FFCC00;
+    color: black;
+    padding: 3px 15px 3px 15px;
+    border-radius: 2px;
+}
+h3{
     color: white;
     font-family: 'Indie Flower', cursive;
-    font-size: 34px;
-    text-align: center;
-    margin-bottom: 20px;
-   
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-
-main{
-    text-align: center;
-}
-
-#user_text{
+textarea{
     height: 100px;
     width: 450px;
-   
-}
-
-#answer_f{
-    height: 100px;
-    width: 450px
-}
-
-#offset{
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+    resize: none;
+    text-align: justify;
+    border-radius: 12px 12px 12px 12px; 
+    background: #FFFF99;
     margin-bottom: 40px;
+    outline: none;
+} 
+#offset{
+    margin-bottom: 50px;
     height: 50px;
+    font-size: 20px;
     width: 100px;
-
-}
-
-#encode_button{
-    background-color: #F5BE2D;    
-    font-family: 'Indie Flower', cursive;
-    color: black;
-    font-size: 30px;   
-    text-align: center;
-    height: 40px;
-    width: 120px;
+    font-family: 'Inconsolata', monospace;
+    border-radius: 5px 5px 5px 5px;  
     border: none;
-    border-radius: 12px 12px 12px 12px;    
+    outline: none;
 }
-
-#decode_button{
-    background-color: #F5BE2D;    
-    font-family: 'Indie Flower', cursive;
+.boton {
+    background-color: #FFCC00;    
+    font-family: 'Inconsolata bold', monospace;
     color: black;
-    font-size: 30px;   
-    text-align: center;
-    height: 40px;
+    font-size: 22px;   
+    height: 70px;
     width: 180px;
-    border: none;
-    border-radius: 12px 12px 12px 12px;
+    border: 0px solid white;
+    border-radius: 12px 12px 12px 12px;  
+    cursor: pointer;
+    transition: background 2s, color 1s;
+    line-height: 18px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin: 4px;
+    outline: none;
+}
+.boton:hover {
+    background: white;
+    color: #fff;
+}
+#erase_button{
+    background-color: #2C46EA;
+    vertical-align: top;
+}
+footer{
+    background-color: #FFCC00;  
+    color: black;
+    font-size: 25px;   
+    width: 100%;
+    height: auto;
+    line-height: 2px;
+    margin: 0;
+    padding: 1px 0;
+    overflow: hidden;
+    font-family: 'Inconsolata bold', monospace;
+    position: absolute;
+}  
+a{
+    color:black;
+}
+a:hover{
+    color:black;
+    font-size: 28px;   
 }
