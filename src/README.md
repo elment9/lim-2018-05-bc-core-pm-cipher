@@ -36,10 +36,14 @@ imagen relacionada a la app.
 ![caeser-cipher](https://imageshack.com/a/img922/7707/YvNhq3.png)
 
 * Al hacer la prueba con algunos usuarios, se llegó a la conclusión que era necesario colocar 
-una descripción que definiera el porqué del producto. Además se destacó algunos botones para
+una descripción que definiera el porqué del producto. Además se destacó texto y algunos botones para
 su mejor visualización.
 
 ![caeser-cipher](https://imageshack.com/a/img924/4268/lEZEVS.png)
+
+* En una última prueba, se notó que el texto resaltado podía confundirse con botones. Así que se llegó a la conclusión de retirarlo.
+
+![caeser-cipher](https://imageshack.com/a/img922/4246/4akOD4.png)
 
 ## Funcionalidad del producto
 
