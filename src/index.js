@@ -22,5 +22,5 @@ buttonDecode.addEventListener("click",() => {
 buttonErase.addEventListener("click",() => {
         answer.innerHTML = " ";
         string.value = " ";
-        offset.value = 1;
+        offset.value = "";
 })
