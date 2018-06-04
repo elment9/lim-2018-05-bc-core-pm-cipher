@@ -6,9 +6,21 @@ let offset = document.getElementById("offset");
 const buttonEncode = document.getElementById("encode_button");
 //Llamo botón decodificar
 const buttonDecode = document.getElementById("decode_button");
+//Llamo botón BORRADO
+const buttonErase = document.getElementById("erase_button");
 //Llamo caja respuesta
 let answer = document.getElementById("answer_f");
-//Llamo evento decode
-buttonEncode.addEventListener("click",()=>{
-answer.value = buttonEncode.addEventListener("click", window.cipher.encode(offset,string));
+//Llamo evento Encode
+buttonEncode.addEventListener("click",() => {
+        answer.innerHTML = cipher.createCipherWithOffset(parseInt(offset.value)).decode(string.value);
+})
+//Llamo evento Decode
+buttonDecode.addEventListener("click",() => {
+        answer.innerHTML = cipher.createCipherWithOffset(parseInt(offset.value)).decode(string.value);
+})
+//Llamo evento Limpiar
+buttonErase.addEventListener("click",() => {
+        answer.innerHTML = " ";
+        string.value = " ";
+        offset.value = 1;
 })
