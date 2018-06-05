@@ -12,13 +12,6 @@ const buttonErase = document.getElementById("erase_button");
 let answer = document.getElementById("answer_f");
 //Llamo evento Encode
 buttonEncode.addEventListener("click",() => {
-<<<<<<< HEAD
-        answer.innerHTML = cipher.encode(parseInt(offset.value),string.value);
-})
-//Llamo evento Decode
-buttonDecode.addEventListener("click",() => {
-        answer.innerHTML = cipher.decode(parseInt(offset.value),string.value);
-=======
         //answer.innerHTML = cipher.encode(parseInt(offset.value),string.value);
         answer.innerHTML = cipher.createCipherWithOffset(parseInt(offset.value)).encode(string.value);
 })
@@ -26,7 +19,6 @@ buttonDecode.addEventListener("click",() => {
 buttonDecode.addEventListener("click",() => {
         //answer.innerHTML = cipher.decode(parseInt(offset.value),string.value);
         answer.innerHTML = cipher.createCipherWithOffset(parseInt(offset.value)).decode(string.value);
->>>>>>> 289ac53c58b80c835a64ceaa17ce3f4b38e5264f
 })
 //Llamo evento Limpiar
 buttonErase.addEventListener("click",() => {
