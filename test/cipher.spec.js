@@ -75,7 +75,8 @@ describe('cipher', () => {
     });
 
     it('debería retornar un objeto con dos funciones (encode y decode) con offset fijado', () => {
-      assert.property({encode:{string}}, 'string');
+      assert.property({objetoNuevo:{encode:'offset'}}, 'string');
+      assert.property({objetoNuevo:{decode:'offset'}}, 'string');
     });
 
   });
