@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
+<<<<<<< HEAD
       <h1>Encríptalo</h1>
       <div id="description">
         <p>Conviértete en un todo espía y envía mensajes secretos a tus amigxs o novix, que solo ellos y tú podrán leer. <b>Encríptalo</b> se basa en el ya conocido <b>Código César</b>, que te permite cifrar y decifrar mensajes con solo ingresar tu texto y un número clave.</p>
@@ -35,6 +36,34 @@
         <p class="footer">Creado por Elizabeth Mendoza</p>
         <p class="footer"><a href="https://www.behance.net/elizabethmendozat" target="_blank">www.behance.net/elizabethmendozat</a></p>
       </footer>
+=======
+    <h1>Encríptalo</h1>
+      <div id="description">
+        <p>Conviértete en todo un espía y envía <span><b>mensajes secretos</b></span> a tus amigxs o novix, que solo ellos y tú podrán leer.¡Olvídate de los curiosxs que husmean en tus redes sociales cuando decuidas el móvil!</p>
+        <p><span><b>Encríptalo</b></span> se basa en el ya conocido <span><b>Código César</b></span>, que te permite cifrar y decifrar mensajes con solo ingresar tu texto y un número clave.</p>
+        <p><span><b>Recuerda</b></span> que solo tú y tu cómplice deben conocer el número clave</p>
+      </div>
+      <h3>Ingresa tu palabra o frase aquí:</h3>
+<!-- Caja de texto Usuario-->
+         <textarea id="user_text"></textarea>
+<!-- Caja número de desplazamientos-->     
+      <h3>Escribe tu número clave</h3>
+        <input type="number" min="1" placeholder="Número" id="offset"/> 
+        <br>
+<!-- Botón descifrado-->  
+        <button id="decode_button" class="boton"><b>DESCIFRA TU <br> MENSAJE</b></button>  
+<!-- Botón cifrado-->    
+        <button id="encode_button" class="boton"><b>CIFRA TU <br>MENSAJE</b></button>
+<!--Botón borrado-->
+        <button class="boton" id="erase_button"><b>LIMPIA</b></button>  
+<!-- Caja resultado-->      
+      <h3>Tu resultado</h3>
+        <textarea id="answer_f" disabled></textarea>
+    <footer>
+      <p class="footer">Creado por Elizabeth Mendoza</p>
+      <p class="footer"><a href="https://www.behance.net/elizabethmendozat" target="_blank">www.behance.net/elizabethmendozat</a></p>
+    </footer>
+>>>>>>> 2c36e03961018b1aa074d6dc6a0e252971270d44
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
