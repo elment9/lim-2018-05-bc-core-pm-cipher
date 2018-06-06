@@ -35,18 +35,12 @@ span{
     padding: 3px 15px 3px 15px;
     border-radius: 2px;
 }
-.sub{
-    background:#23749B;
-    color: black;
-    padding: 3px 15px 3px 15px;
-    border-radius: 3px;
-}
 h3{
     color: white;
     font-family: 'Indie Flower', cursive;
     font-size: 40px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 textarea{
     height: 100px;
@@ -92,7 +86,7 @@ textarea{
     color: #fff;
 }
 #erase_button{
-    background-color: #9153C1;
+    background-color: #2C46EA;
     vertical-align: top;
 }
 footer{
@@ -111,9 +105,7 @@ footer{
 a{
     color:black;
 }
-
 a:hover{
     color:black;
     font-size: 28px;   
 }
-
