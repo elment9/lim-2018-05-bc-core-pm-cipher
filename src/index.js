@@ -25,4 +25,9 @@ buttonErase.addEventListener("click",() => {
         answer.innerHTML = " ";
         string.value = " ";
         offset.value = 1;
+<<<<<<< HEAD
 })
+=======
+})
+
+>>>>>>> d2726a586c54fd9f42b8853c05debbf643b83db1
