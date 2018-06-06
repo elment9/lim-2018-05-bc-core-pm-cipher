@@ -75,10 +75,20 @@ describe('cipher', () => {
     });
 
     it('debería retornar un objeto con dos funciones (encode y decode) con offset fijado', () => {
-      assert.property({objetoNuevo:{encode:'offset'}}, 'string');
-      assert.property({objetoNuevo:{decode:'offset'}}, 'string');
+      //El objeto debuelve una función decode
+      let esteEsUnObjeto = cipher.createCipherWithOffset(33)
+      assert.property(esteEsUnObjeto, 'encode');
+    });
+
+    it('encode es una función', () => {
+      let esteEsUnObjeto = cipher.createCipherWithOffset(33)
+      assert.equal(esteEsUnObjeto.encode('ABC'), 'HIJ');
+    });
+
+    it('decode es una función', () => {
+      let esteEsUnObjeto = cipher.createCipherWithOffset(33)
+      assert.equal(esteEsUnObjeto.decode('ABC'), 'TUV');
     });
 
   });
-
 });
