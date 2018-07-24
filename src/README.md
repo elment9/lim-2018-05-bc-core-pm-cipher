@@ -33,7 +33,7 @@ y el valor negro. El modelo resulto ser bastante básico pero algo plano por la 
  pues esto le daba una apariencia más amigable. De igual forma, se agregó un fondo con una
 imagen relacionada a la app.
 
-![caeser-cipher](https://imageshack.com/a/img922/7707/YvNhq3.png)
+![caeser-cipher](https://imagizer.imageshack.com/v2/1055x583q90/921/6CIur7.png)
 
 * Al hacer la prueba con algunos usuarios, se llegó a la conclusión que era necesario colocar 
 una descripción que definiera el porqué del producto. Además se destacó texto y algunos botones para
